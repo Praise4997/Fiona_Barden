@@ -5,38 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body{
+            background-color: transparent;
+        }
         .email-signature{
             display: flex;
-            background-color: black;
-            width: fit-content;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .email-signature .image img{
+           height: fit-content;
+           width: fit-content;
         }
         .text-image{
-            display: flex;
-            flex-direction: column;
-            flex-flow: column nowrap;
-            align-content: center;
-            align-items: center;
+          margin-left: 5px; 
+          align-items: center;
+          justify-content: center;
+          text-align: left;
+          vertical-align: middle;
         }
         .icons{
             display: flex;
+            align-items: center;
+            justify-content: left;
             margin: 0 auto;
             margin-left: 7px;
         }
+
+        .icons img{
+            height: 18px;
+            width: 18px;
+            opacity: 0.8;
+        }
+
+        .icons img:nth-child(2){
+            height: 19px;
+            width: 19px;
+        }
+
+        .text-image .text h1,h4,h3,.icons{
+            margin: 0;
+            padding: 0px;
+            font-family: 'Times New Roman';
+            line-height:normal;
+            vertical-align: baseline;
+            letter-spacing: normal;
+            word-spacing: 0px;
+            font-weight: 400;
+            font-style: normal;
+            font-variant: normal;
+        }
+
+        .text-image .text h1{
+            color: #00008B;
+            font-weight: bold;
+        }
+
+        .text-image .text h4{
+            color: #00008B;
+            font-size: 17px;
+        }
+
+        .text-image .text h3{
+            font-weight: 400;
+            color: #fac906;
+            font-size: 17px;
+        }
+
+        @media (max-width:768px){
+            .text-image .text h1{
+                font-size: 18px;
+            }
+            .text-image .text h4{
+                font-size: 15px;
+            }
+            .text-image .text h3{
+                font-size: 15px;
+            }
+        }
     </style>
 
-    <title>Email Signature</title>
+    <title>Fiona Barden</title>
 </head>
 <body>
     <div class="email-signature">
         <div class="image">
-            <img src="./images/IMG-20221216-WA0017.jpg" alt="" srcset="">
+            <img src="./images/IMG-20221216-WA0017-removebg-preview.png" alt="" srcset="">
         </div>
         <div class="text-image">
-            <img src="./images/IMG-20221216-WA0024.jpg" alt="">
-            <img src="./images/IMG-20221216-WA0022.jpg" alt="">
+            <div class="text">
+                <h1>Fiona Barden</h2>
+                <h4>Goodlove Goods</h3>
+                <h3>P.0405246259</h3>
+                <h3>fiona@goodlovegoods.com.au</h3>
+                <h3>goodlovegoods.com.au</h3>
+            </div>
             <div class="icons">
-                <img src="./images/IMG-20221216-WA0014.jpg" alt="">
-                <img src="./images/IMG-20221216-WA0012.jpg" alt="">
+                <img src="./images/icons8-instagram (1).svg" alt="">
+                <img src="./images/icons8-facebook (1).svg" alt="">
             </div>
         </div>
     </div>
